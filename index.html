@@ -1,735 +1,1195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Xiangci Li's Homepage</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Xiangci Li - Applied Scientist & NLP Researcher</title>
+  <meta name="description"
+    content="Xiangci Li - Applied Scientist at Amazon Web Services specializing in Natural Language Processing, Large Language Models, and Knowledge-intensive NLP.">
+  <meta name="author" content="Xiangci Li">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jacklxc.github.io/XiangciLi/">
+  <meta property="og:title" content="Xiangci Li - Applied Scientist & NLP Researcher">
+  <meta property="og:description"
+    content="Applied Scientist at Amazon Web Services specializing in Natural Language Processing and Large Language Models.">
+  <meta property="og:image" content="assets/img/profile-img.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://jacklxc.github.io/XiangciLi/">
+  <meta property="twitter:title" content="Xiangci Li - Applied Scientist & NLP Researcher">
+  <meta property="twitter:description"
+    content="Applied Scientist at Amazon Web Services specializing in Natural Language Processing and Large Language Models.">
+  <meta property="twitter:image" content="assets/img/profile-img.jpg">
 
   <!-- Favicons -->
   <link href="assets/img/icon.png" rel="icon">
   <link href="assets/img/icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- CSS Files -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    media="all">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/vendor-bundle.min.css" media="all">
+  <link rel="stylesheet" href="assets/css/academicons.min.css" media="all">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="assets/css/wowchemy.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    .big-icon {
+      font-size: 1.5rem;
+    }
 
-  <!-- =======================================================
-  * Template Name: MyResume - v2.2.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    .home-section {
+      padding: 0 0 110px 0;
+    }
+
+    .avatar {
+      width: 270px;
+      height: 270px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .network-icon li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .network-icon a {
+      color: #495057;
+      text-decoration: none;
+    }
+
+    .network-icon a:hover {
+      color: #007bff;
+    }
+
+    .pub-list-item {
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #e9ecef;
+    }
+
+    .author-highlighted {
+      font-weight: bold;
+    }
+
+    .btn-page-header {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-heading h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .portrait-title h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .article-style {
+      text-align: justify;
+      line-height: 1.6;
+    }
+
+    .ul-interests li,
+    .ul-edu li {
+      margin-bottom: 0.5rem;
+    }
+
+    .course {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .institution {
+      color: #6c757d;
+      font-style: italic;
+    }
+
+    .experience-item {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+      border: 1px solid #e9ecef;
+      border-radius: 0.5rem;
+    }
+
+    .experience-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #007bff;
+    }
+
+    .experience-company {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-date {
+      color: #6c757d;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+
+    /* Navigation bar styles */
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      height: 75px;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      color: #2c3e50 !important;
+      font-size: 1.4rem;
+    }
+
+    .nav-link {
+      font-weight: 500;
+      color: #2c3e50 !important;
+      padding: 0.7rem 1rem;
+      transition: color 0.3s ease;
+      font-size: 1.1rem;
+    }
+
+    .nav-link:hover {
+      color: #4285F4 !important;
+    }
+
+    .nav-link.active {
+      color: #4285F4 !important;
+      font-weight: 600;
+      border-bottom: 2px solid #4285F4;
+    }
+
+    /* Fix for mobile navigation */
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        background-color: rgba(255, 255, 255, 0.98);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+      
+      .nav-link.active {
+        border-bottom: none;
+        border-left: 3px solid #4285F4;
+        padding-left: 0.7rem;
+      }
+      
+      .navbar-nav {
+        padding-bottom: 0.5rem;
+      }
+    }
+    
+    /* Dark mode styles */
+    [data-theme="dark"] .navbar {
+      background-color: rgba(26, 32, 44, 0.95) !important;
+    }
+    
+    [data-theme="dark"] .navbar-brand {
+      color: #ffffff !important;
+    }
+    
+    [data-theme="dark"] .nav-link {
+      color: #e2e8f0 !important;
+    }
+    
+    [data-theme="dark"] .nav-link:hover {
+      color: #8AB4F8 !important;
+    }
+    
+    [data-theme="dark"] .nav-link.active {
+      color: #8AB4F8 !important;
+      border-bottom: 2px solid #8AB4F8;
+    }
+    
+    [data-theme="dark"] .fa-search,
+    [data-theme="dark"] .fa-moon {
+      color: #e2e8f0 !important;
+    }
+    
+    /* Fix for mobile navigation */
+    @media (max-width: 991.98px) {
+      .navbar-collapse {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+      
+      .nav-link.active {
+        border-bottom: none;
+        border-left: 3px solid #4285F4;
+        padding-left: 0.7rem;
+      }
+      
+      .navbar-nav {
+        padding-bottom: 0.5rem;
+      }
+    }
+    
+    /* Page body styling */
+    .page-body {
+      padding-top: 0;
+      word-wrap: break-word;
+    }
+    
+    /* Ensure proper spacing for sections */
+    section {
+      scroll-margin-top: 80px;
+    }
+  </style>
 </head>
 
-<body>
+<body id="top" data-spy="scroll" data-offset="70" data-target="#navbar-main">
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top compensate-for-scrollbar" id="navbar-main">
+      <div class="container-xl">
+        <div class="d-none d-lg-inline-flex">
+          <a class="navbar-brand" href="#top" style="color: #2c3e50; font-size: 1.4rem;">Xiangci Li</a>
+        </div>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content"
+          aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="fas fa-bars"></i></span>
+        </button>
 
-    <nav class="nav-menu">
-      <ul>
-        <li class="active"><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about"><i class="bx bx-user"></i> <span>Xiangci Li</span></a></li>
-        <li><a href="#publication"><i class="bx bx-server"></i> <span>Publications</span></a></li>
-        <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#skills"><i class="bx bx-book-content"></i> <span>Skills</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+        <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+          <a class="navbar-brand" href="#top" style="color: #2c3e50; font-size: 1.4rem;">Xiangci Li</a>
+        </div>
 
-  </header><!-- End Header -->
+        <div class="navbar-collapse main-menu-item collapse justify-content-center" id="navbar-content">
+          <ul class="navbar-nav d-md-inline-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#about" style="font-size: 1.1rem;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#publications" style="font-size: 1.1rem;">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience" style="font-size: 1.1rem;">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="font-size: 1.1rem;">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Xiangci Li, Ph.D.</h1>
-      <p>I'm <span class="typed" data-typed-items="an NLP Researcher, an Applied Scientist"></span></p>
-      <div class="social-links">
-        <a href="https://twitter.com/jacklxc" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/lixiangci/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/jacklxc" class="github" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-        <a href="https://www.youtube.com/channel/UCNf4Z-cl68yDckCQbSlieSw/featured" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bx bxl-youtube"></i></a>
+        <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+          <li class="nav-item dropdown theme-dropdown">
+            <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+              <i class="fas fa-moon" style="color: #2c3e50; font-size: 1.1rem;" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item js-set-theme-light" style="font-size: 1rem;">
+                <span>Light</span>
+              </a>
+              <a href="#" class="dropdown-item js-set-theme-dark" style="font-size: 1rem;">
+                <span>Dark</span>
+              </a>
+              <a href="#" class="dropdown-item js-set-theme-auto dropdown-item-active" style="font-size: 1rem;">
+                <span>Automatic</span>
+              </a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section><!-- End Hero -->
+    </nav>
+  </header>
 
-  <main id="main">
+  <div class="page-body">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Xiangci Li</h2>
-          <p>I am an Applied Scientist at Amazon. 
-            My research interest is natural language processing, specifically knowledge-intensive natural language processing, including scholarly document processing, dialogue generation and fact-verification. 
-          </p>
-        </div>
-
+    <!-- About Section -->
+    <section id="about" class="home-section wg-about" style="padding-top: 110px;">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>李向磁</h3>
-            <p class="font-italic">
-              Natural Language Processing Researcher
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Company:</strong> Amazon Web Services</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Location:</strong> Bay Area, CA, USA</li>
-                </ul>
+          <div class="col-12 col-lg-4">
+            <div id="profile">
+              <img class="avatar" src="assets/img/profile-img.jpg" alt="Xiangci Li">
+
+              <div class="portrait-title">
+                <h2>Xiangci Li</h2>
+                <h3>李向磁</h3>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Role:</strong> Applied Scientist II</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> lixiangci8 AT gmail DOT com</li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              I am an Applied Scientist II at Amazon Web Services. I had 5 internship experiences at Google, Amazon, Tencent, Baidu and Chan Zuckerburg Initiative. My Ph.D. was at UT Dallas, advised by <a href="https://personal.utdallas.edu/~jessica.ouyang/" target="_blank" rel="noopener noreferrer">Dr. Jessica Ouyang</a>. Previously I was a master student at University of Southern California (USC) and research assistant in <a href="https://vnpeng.net/" target="_blank" rel="noopener noreferrer">Prof. Nanyun Peng's PLUS Lab</a> at Information Sciences Insitute (now moved to UCLA).
-              Before that, I was a full-time computational neuroscience research assistant at <a href="https://www.erlichlab.org/" target="_blank" rel="noopener noreferrer">Erlich Lab</a> at New York University Shanghai, where I graduated with Bachelor's degree 
-              in computer science and neuroscience.
-            </p>
-          </div>
-        </div>
 
-      </div>
-    </section><!-- End About Section -->
-
-    <section id="publication" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Publications</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 pt-4 pt-lg-0 content">
-
-            <a href="https://aclanthology.org/2024.emnlp-main.767/" target="_blank" rel="noopener noreferrer"><h3>Related Work and Citation Text Generation: A Survey</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b> & Jessica Ouyang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong> The 2024 Conference on Empirical Methods in Natural Language Processing (EMNLP 2024) </li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2024/11</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We survey all existing related work generation works, including sentence-level citation text generation.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://youtu.be/N2akUU2Go80?si=2-1VOEidAFNg0qsV" target="_blank" rel="noopener noreferrer">Video</a>
-                   </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://aclanthology.org/2024.lrec-main.58/" target="_blank" rel="noopener noreferrer"><h3>A Knowledge Plug-and-Play Test Bed for Open-domain Dialogue Generation</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Linfeng Song, Haitao Mi, Lifeng Jin, Jessica Ouyang & Dong Yu
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong> The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2024/5</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>Tencent America</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We build a multi-source Wizard of Wikipedia (Ms.WoW) dataset as a test bed for multi-source open-domain dialogue generation and propose a challenge called dialogue knowledge plug-and-play to test a trained model's adaptability to newly available knowledge sources.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://youtu.be/5L7B_beOJ08?si=c-LWuDOHtEWJ8-O_" target="_blank" rel="noopener noreferrer">Video</a>,
-                    <a href="https://github.com/jacklxc/Ms.WoW" target="_blank" rel="noopener noreferrer">Repository</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://aclanthology.org/2024.lrec-main.340/" target="_blank" rel="noopener noreferrer"><h3>Contextualizing Generated Citation Texts</h3></a>
-            <p class="font-italic">
-              Biswadip Mandal, <b>Xiangci Li</b> & Jessica Ouyang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong> The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2024/5</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We show the benefit of generating citation contexts alone with target citation texts.</li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://arxiv.org/abs/2404.15588" target="_blank" rel="noopener noreferrer"><h3>Minimal Evidence Group Identification for Claim Verification</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Sihao Chen, Rajvi Kapadia, Jessica Ouyang & Fan Zhang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>Google</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Year: </strong>2024</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We propose a novel task called minimal evidence group identification to address claim-verification with multiple plausible sets of fully or partially supporting evidence.</li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="" target="_blank" rel="noopener noreferrer"><h3>Wizard of Shopping: Target-Oriented E-commerce Dialogue Generation with Decision Tree Branching</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Zhiyu Chen,  Jason Ingyu Choi, Nikhita Vedura, Besnik Fetahu, Oleg Rokhlenko & Shervin Malmasi
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>Amazon</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Year: </strong>2023</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We propose a shopping dialogue generation using decision tree and large language models, which greatly improves the downstream conversational product search performance.</li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://arxiv.org/abs/2402.13426" target="_blank" rel="noopener noreferrer"><h3>Explaining Relationships Among Research Papers</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b> & Jessica Ouyang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>arXiv: </strong>2402.13426</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We explore literature review generating with large language models.</li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://aclanthology.org/2024.sdp-1.9/" target="_blank" rel="noopener noreferrer"><h3>Cited Text Spans for Scientific Citation Text Generation</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Yi-Hui Lee & Jessica Ouyang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong> The Fourth Workshop on Scholarly Document Processing (SDP 2024)</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2024/8</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We show that distantly-retrieved cited text spans greatly improves citation text generation.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://youtu.be/9LJp2veJ0tY?si=_vA_-c3phg3HC-A_" target="_blank" rel="noopener noreferrer">Video</a>
-                   </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://aclanthology.org/2022.naacl-main.397/" target="_blank" rel="noopener noreferrer"><h3>CORWA: A Citation Oriented Related Work Annotation Dataset</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Biswadip Mandal, Jessica Ouyang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong>Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL 2022)</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2022/7/10</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We collect a linguistically motivated citation span-based dataset for related work generation. We develop a strong baseline model to automatically annotate unlabeled related work sections. We propose a new task, citation span generation. Finally we provide a big picture of the future related work generation system.</li>
-                  <li><i class="icofont-rounded-right" ></i> <strong>Resources: </strong>
-                    <a href="https://youtu.be/DXbdGF55m1Q" target="_blank" rel="noopener noreferrer">Video</a>,
-                    <a href="https://github.com/jacklxc/CORWA" target="_blank" rel="noopener noreferrer">Repository</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://arxiv.org/pdf/2201.01880.pdf" target="_blank" rel="noopener noreferrer"><h3>Automatic Related Work Generation: A Meta Study</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Jessica Ouyang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>arXiv: </strong>2201.01880</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Upload Date: </strong>2022/1</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We survey prior works of related work generation task, and selected prior works on other relevant tasks. We point out the limitations of the existing works, and suggest new directions to explore.</li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://d7qzviu3xw2xc.cloudfront.net/alexa/alexaprize/docs/sgc4/UT-Dallas-CASPR.pdf
-            " target="_blank" rel="noopener noreferrer"><h3>CASPR: A Commonsense Reasoning-based Conversational Socialbot</h3></a>
-            <p class="font-italic">
-              Kinjal Basu, Huaduo Wang, Nancy Dominguez, <b>Xiangci Li</b>, Fang Li, Sarat Chandra Varanasi, Gopal Gupta
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Venue: </strong>Alexa Prize Socialbot Grand Challenge 4 Proceedings</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2021/7</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Texas at Dallas</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We report on the design and development of the CASPR system, a socialbot designed to compete in the Amazon Alexa Socialbot Challenge 4. </li>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://www.aclweb.org/anthology/2021.eacl-main.218/" target="_blank" rel="noopener noreferrer"><h3>Scientific Discourse Tagging for Evidence Extraction</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Gully Burns, Nanyun Peng
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong>The 16th Conference of the European Chapter of the Association for Computational Linguistics (EACL 2021)</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2021/4/19</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Southern California, Information Sciences Institute</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We develop a state-of-the-art model for scientific discourse tagging
-                    and demonstrate its strong performance and transferability on a few datasets. We then demonstrate the
-                    benefit of leveraging the scientific discourse tags on downstream-tasks
-                    by providing claim-extraction task and evidence fragment detection task
-                    as two show cases.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://youtu.be/Z_xdAuJmU-Y" target="_blank" rel="noopener noreferrer">Video</a>,
-                    <a href="https://github.com/jacklxc/ScientificDiscourseTagging" target="_blank" rel="noopener noreferrer">Code</a>,
-                    <a href="https://github.com/jacklxc/ScientificDiscourseTagging/blob/master/Scientific%20Discourse%20Tagging%20for%20Evidence%20Extraction%20EACL%202021%20poster.pdf" target="_blank" rel="noopener noreferrer">Poster</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://arxiv.org/abs/2012.14500" target="_blank" rel="noopener noreferrer"><h3>A Paragraph-level Multi-task Learning Model for Scientific Fact-Verification</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Gully Burns, Nanyun Peng
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong>The AAAI-21 Workshop on Scientific Document Understanding</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2021/2/9</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Southern California, Information Sciences Institute</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We propose a novel, paragraph-level, multi-task learning model for a scientific claim-verifications task (SciFact) by directly computing a sequence of contextualized sentence embeddings from a BERT model and jointly training the model on rationale selection and stance prediction.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://youtu.be/YrpYAdNl05Y" target="_blank" rel="noopener noreferrer">Video</a>,
-                    <a href="https://github.com/jacklxc/ParagraphJointModel" target="_blank" rel="noopener noreferrer">Code</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.37/" target="_blank" rel="noopener noreferrer"><h3>Context-aware Stand-alone Neural Spelling Correction</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li</b>, Hairong Liu, Liang Huang
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conference: </strong>Findings of the Association for Computational Linguistics: EMNLP 2020</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Date: </strong>2020/11/16</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>Baidu USA</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We present a simple yet powerful solution that jointly detects and corrects misspellings as a sequence labeling task by fine-turning a pre-trained language model.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://github.com/jacklxc/StandAloneSpellingCorrection" target="_blank" rel="noopener noreferrer">Code</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <a href="https://doi.org/10.1093/database/baz034" target="_blank" rel="noopener noreferrer"><h3>Building deep learning models for evidence classification from the open access biomedical literature</h3></a>
-            <p class="font-italic">
-              Gully Burns, <b>Xiangci Li</b>, Nanyun Peng
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Journal: </strong>Database</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Publication Year: </strong>2019</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>University of Southern California, Information Sciences Institute</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We apply deep learning on experimental type classification of biomedical experimental descriptions.</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Resources: </strong>
-                    <a href="https://github.com/jacklxc/expX" target="_blank" rel="noopener noreferrer">Code</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <a href="https://youtu.be/Xs9DYRXQxNg" target="_blank" rel="noopener noreferrer"><h3>Neural and computational mechanismsfor task switching</h3></a>
-            <p class="font-italic">
-              <b>Xiangci Li*</b>, Chunyu Duan*, Ce Ma, Carlos Brody, Zheng Zhang, Jeffrey Erlich
-            </p>
-            <div class="row">
-              <div class="col-lg-12">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Insititution: </strong>New York University Shanghai</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Conferences: </strong>Society for Neuroscience 2017, Computational and Systems Neuroscience (Cosyne) 2021 (Oral, 4.6% acceptance rate)</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>TLDR: </strong>We trained rats and recurrent neural networks to perform a task-switching paradigm using similar procedures. Our results elucidate how ongoing activity, shaped by recent experience of animals and artifical systems, can influence new tasks at hand.</li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Publications Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>University of Texas at Dallas</h4>
-              <h5>2020.8 - 2024.11</h5>
-              <p><b>Doctor of Philosophy</b></p>
-              <p><em>Computer Science</em></p>
-              <ul>
-                <li>Advisor: Professor Jessica Ouyang</li>
-                <li>Research direction: knowledge-intensive natural language generation</li>
-                <li>GPA: 3.96</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>University of Southern California</h4>
-              <h5>2018.5 - 2019.12</h5>
-              <p><b>Master of Science</b></p>
-              <p><em>Computer Science</em></p>
-              <ul>
-                <li>Courses: Natural Language Processing, Machine Learning, Computer Vision, Information Integration, Algorithms, Web Technology, Database Systems</li>
-                <li>Advisors: Professor Nanyun Peng & Dr. Gully Burns</li>
-                <li>Research direction: scientific information extraction</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>New York University Shanghai</h4>
-              <h5>2013.8 - 2017.5</h5>
-              <p><b>Bachelor of Science</b></p>
-              <p><em>Computer Science & Neuroscience</em></p>
-              <ul>
-                <li>Honor: Cum Laude</li>
-                <li>GPA: 3.72</li>
-              </ul>
-            </div>
-          <div class="col-lg-12">
-            <h3 class="resume-title">Professional Experience</h3>
-
-            <div class="resume-item">
-              <h4>Applied Scientist II</h4>
-              <h5>2024.5 - Present</h5>
-              <p><em>Amazon Web Services, Inc.</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Research Intern & Student Researcher</h4>
-              <h5>2023.9 - 2024.1 - 2024.5 </h5>
-              <p><em>Google LLC</em></p>
-              <ul>
-                <li> Minimal Evidence Group Identification for Fact Verification </li>
-                <li> Supervised by <a href="https://scholar.google.com/citations?user=n1cpblcAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">Dr. Fan Zhang</a>, & Rajvi Kapadia. </li>
-                <li> Collaboration with <a href="https://scholar.google.com/citations?user=PQ9dRCgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Sihao Chen</a>.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>Applied Scientist Intern</h4>
-              <h5>2023.5 - 2023.8</h5>
-              <p><em>Amazon.com Services LLC</em></p>
-              <ul>
-                <li> Wizard of Shopping: Target-Oriented E-commerce Dialogue Generation with Decision Tree Branching </li>
-                <li> Supervised by <a href="https://zhiyuchen.com/" target="_blank" rel="noopener noreferrer">Dr. Zhiyu Chen</a>, 
-                  <a href="https://scholar.google.com/citations?user=y4ZQRBwAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Jason Ingyu Choi</a>, 
-                  <a href="https://vnik18.github.io/" target="_blank" rel="noopener noreferrer">Dr. Nikhita Vedula</a>,  
-                  <a href="https://scholar.google.com/citations?user=-CQlI8EAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Besnik Fetahu</a>, 
-                  <a href="https://scholar.google.com/citations?user=rgKKn-kAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Oleg Rokhlenko</a> & 
-                  <a href="https://scholar.google.com.au/citations?user=lT1-HZsAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Shervin Malmasi</a> 
+              <ul class="network-icon" aria-hidden="true">
+                <li>
+                  <a href="mailto:lixiangci8@gmail.com" aria-label="envelope">
+                    <i class="fas fa-envelope big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/jacklxc" target="_blank" rel="noopener" aria-label="twitter">
+                    <i class="fab fa-twitter big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com.hk/citations?user=DfYeDPwAAAAJ&hl=en" target="_blank"
+                    rel="noopener" aria-label="google-scholar">
+                    <i class="ai ai-google-scholar big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/jacklxc" target="_blank" rel="noopener" aria-label="github">
+                    <i class="fab fa-github big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/lixiangci/" target="_blank" rel="noopener" aria-label="linkedin">
+                    <i class="fab fa-linkedin big-icon"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/@xiangcili6225" target="_blank" rel="noopener" aria-label="youtube">
+                    <i class="fab fa-youtube big-icon"></i>
+                  </a>
                 </li>
               </ul>
             </div>
+          </div>
 
-            <div class="resume-item">
-              <h4>Research Intern, Natural Language & Speech Processing</h4>
-              <h5>2022.5 - 2022.8</h5>
-              <p><em>Tencent America, Tencent AI Lab</em></p>
-              <ul>
-                <li> Multi-source knowledge-based open domain dialogue generation</li>
-                <li> Supervised by <a href="https://freesunshine0316.github.io/" target="_blank" rel="noopener noreferrer">Dr. Linfeng Song</a>, 
-                  <a href="https://scholar.google.com/citations?user=14pGUsIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Dr. Lifeng Jin</a> & 
-                  <a href="https://scholar.google.com.sg/citations?user=G3OMbFSm858C&hl=en" target="_blank" rel="noopener noreferrer">Dr. Haitao Mi</a></li>
-              </ul>
-            </div>
+          <div class="col-12 col-lg-8">
+            <h1>About Me</h1>
+            <div class="article-style">
+              <p>I'm Xiangci Li, an Applied Scientist II at Amazon Web Services, where I specialize in natural language processing and large language model agents for software
+                engineering. My Ph.D. research focused on knowledge-intensive natural language processing,
+                including scholarly document processing, dialogue generation, and fact-verification. I
+                am a leading expert in automatic related work generation and have extensive experience
+                in retrieval-augmented generation systems.</p>
 
-            <div class="resume-item">
-              <h4>Graduate Research Assistant</h4>
-              <h5>2020.8 - 2023.5</h5>
-              <p><em>University of Texas at Dallas</em></p>
-              <ul>
-                <li> Advised by Professor Jessica Ouyang</li>
-                <li>  Scholarly document processing: automatic related work section generation in scientific papers</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graduate Research Assistant</h4>
-              <h5>2020.12 - 2021.5</h5>
-              <p><em>University of Texas at Dallas</em></p>
-              <ul>
-                <li> Advised by Professor Gopal Gupta</li>
-                <li> Member of UT Dallas CASPR team for Alexa Prize Competition Grand Challenge 4</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Teaching Assistant</h4>
-              <h5>2020.8 - 2020.12</h5>
-              <p><em>University of Texas at Dallas</em></p>
-              <ul>
-                <li>Undergraduate-level Machine Learning</li>
-                <li>Graduate-level Semantic Web</li>
-              </ul>
+              <p>I completed my Ph.D. in Computer Science at the University of Texas at Dallas under the
+                supervision of <a href="https://personal.utdallas.edu/~jessica.ouyang/" target="_blank"
+                  rel="noopener">Dr. Jessica Ouyang</a>, focusing on knowledge-intensive natural
+                language generation. Prior to that, I earned my M.S. in Computer Science from the
+                University of Southern California, where I worked with <a href="https://vnpeng.net/" target="_blank"
+                  rel="noopener">Prof. Nanyun Peng</a> at the Information Sciences
+                Institute.</p>
+
+              <p>Throughout my career, I have gained valuable industry experience through internships at
+                leading technology companies including Google, Amazon, Tencent, Baidu, and the Chan
+                Zuckerberg Initiative. My work has resulted in numerous publications at top-tier
+                conferences such as ACL, EMNLP, NAACL, EACL, and COLING.</p>
             </div>
 
-            <div class="resume-item">
-              <h4>Research Scientist Intern</h4>
-              <h5>2020.1 - 2020.5</h5>
-              <p><em>Baidu USA</em></p>
-              <ul>
-                <li> Supervised by Professor Liang Huang & Dr. Hairong Liu</li>
-                <li> Full-time internship on stand-alone neural spelling correction</li>
-                <li>  Paper accepted by Findings of EMNLP 2020</li>
-              </ul>
+            <div class="row">
+              <div class="col-md-5">
+                <div class="section-subheading">Research Interests</div>
+                <ul class="ul-interests mb-0">
+                  <li>Large Language Models & Agents</li>
+                  <li>Knowledge-intensive NLP</li>
+                  <li>Scholarly Document Processing</li>
+                  <li>Dialogue Generation</li>
+                  <li>Fact Verification</li>
+                  <li>Retrieval-augmented Generation</li>
+                </ul>
+              </div>
+
+              <div class="col-md-7">
+                <div class="section-subheading">Education</div>
+                <ul class="ul-edu fa-ul mb-0">
+                  <li>
+                    <i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">Ph.D. in Computer Science, 2020-2024</p>
+                      <p class="institution">University of Texas at Dallas, USA</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">M.S. in Computer Science, 2018-2019</p>
+                      <p class="institution">University of Southern California, USA</p>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-li fas fa-graduation-cap"></i>
+                    <div class="description">
+                      <p class="course">B.S. in Computer Science & Neuroscience, 2013-2017</p>
+                      <p class="institution">New York University Shanghai, China</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="home-section wg-collection" style="padding-top: 110px;">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Publications</h1>
+          </div>
+
+          <div class="col-12 col-lg-8">
+
+            <!-- 2025 Publications -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Zhiyu Chen</span>, <span>Jason
+                  Ingyu Choi</span>, <span>Nikhita Vedura</span>, <span>Besnik Fetahu</span>,
+                <span>Oleg Rokhlenko</span>, <span>Shervin Malmasi</span>
+              </span>
+              (2025).
+              <a href="https://arxiv.org/abs/2502.00969">Wizard of Shopping: Target-Oriented E-commerce
+                Dialogue Generation with Decision Tree Branching</a>.
+              ACL 2025.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2502.00969"
+                  target="_blank" rel="noopener">PDF</a>
+              </p>
             </div>
 
-            <div class="resume-item">
-              <h4>Graduate Student Worker & Research Assistant</h4>
-              <h5>2018.5 - 2020.8</h5>
-              <p><em>University of Southern California, Information Sciences Institute</em></p>
-              <ul>
-                <li> Co-mentored by Professor Nanyun Peng and Dr. Gully Burns</li>
-                <li> Worked on a series of projects leading to publications under evidX, which uses natural language
-                  processing techniques to extract scientific knowledge from biomedical literature, emphasizing on
-                  evidence extraction
-                  <ul>
-                    <li>Biomedical experimental type classification</li>
-                    <li>Scientific discourse tagging</li>
-                    <li>Evidence fragment delineation</li>
-                    <li>Automatic scientific claim-verification</li>
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Sihao Chen</span>, <span>Rajvi
+                  Kapadia</span>, <span>Jessica Ouyang</span>, <span>Fan Zhang</span>
+              </span>
+              (2025).
+              <a href="https://aclanthology.org/2025.trustnlp-main.8/">Minimal Evidence Group
+                Identification for Claim Verification</a>.
+              TrustNLP: Fifth Workshop on Trustworthy Natural Language Processing.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2025.trustnlp-main.8/" target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Jessica Ouyang</span>
+              </span>
+              (2025).
+              <a href="https://aclanthology.org/2025.coling-main.73/">Explaining Relationships Among
+                Research Papers</a>.
+              COLING 2025.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2025.coling-main.73/" target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <!-- 2024 Publications -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Jessica Ouyang</span>
+              </span>
+              (2024).
+              <a href="https://aclanthology.org/2024.emnlp-main.767/">Related Work and Citation Text
+                Generation: A Survey</a>.
+              EMNLP 2024.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2024.emnlp-main.767/" target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://youtu.be/N2akUU2Go80?si=2-1VOEidAFNg0qsV" target="_blank" rel="noopener">Video</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Yi-Hui Lee</span>,
+                <span>Jessica Ouyang</span>
+              </span>
+              (2024).
+              <a href="https://aclanthology.org/2024.sdp-1.9/">Cited Text Spans for Scientific Citation
+                Text Generation</a>.
+              Fourth Workshop on Scholarly Document Processing (SDP 2024).
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://aclanthology.org/2024.sdp-1.9/"
+                  target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://youtu.be/9LJp2veJ0tY?si=_vA_-c3phg3HC-A_" target="_blank" rel="noopener">Video</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Linfeng Song</span>,
+                <span>Haitao Mi</span>, <span>Lifeng Jin</span>, <span>Jessica Ouyang</span>, <span>Dong
+                  Yu</span>
+              </span>
+              (2024).
+              <a href="https://aclanthology.org/2024.lrec-main.58/">A Knowledge Plug-and-Play Test Bed for
+                Open-domain Dialogue Generation</a>.
+              LREC-COLING 2024.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2024.lrec-main.58/" target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://youtu.be/5L7B_beOJ08?si=c-LWuDOHtEWJ8-O_" target="_blank" rel="noopener">Video</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/jacklxc/Ms.WoW"
+                  target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+
+            <!-- 2022 Publications -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Biswadip Mandal</span>,
+                <span>Jessica Ouyang</span>
+              </span>
+              (2022).
+              <a href="https://aclanthology.org/2022.naacl-main.397/">CORWA: A Citation-Oriented Related
+                Work Annotation Dataset</a>.
+              NAACL 2022.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2022.naacl-main.397/" target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/DXbdGF55m1Q"
+                  target="_blank" rel="noopener">Video</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/jacklxc/CORWA"
+                  target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+
+            <!-- 2021 Publications -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Gully Burns</span>,
+                <span>Nanyun Peng</span>
+              </span>
+              (2021).
+              <a href="https://aclanthology.org/2021.eacl-main.218/">Scientific Discourse Tagging for
+                Evidence Extraction</a>.
+              EACL 2021.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2021.eacl-main.218/" target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/Z_xdAuJmU-Y"
+                  target="_blank" rel="noopener">Video</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://github.com/jacklxc/ScientificDiscourseTagging" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+
+            <!-- 2020 Publications -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Hairong Liu</span>,
+                <span>Liang Huang</span>
+              </span>
+              (2020).
+              <a href="https://www.aclweb.org/anthology/2020.findings-emnlp.37/">Context-aware Stand-alone
+                Neural Spelling Correction</a>.
+              Findings of EMNLP 2020.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://www.aclweb.org/anthology/2020.findings-emnlp.37/" target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://github.com/jacklxc/StandAloneSpellingCorrection" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+
+            <!-- Missing 2024 Publication -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span>Biswadip Mandal</span>, <span class="author-highlighted">Xiangci Li</span>, <span>Jessica
+                  Ouyang</span>
+              </span>
+              (2024).
+              <a href="https://aclanthology.org/2024.lrec-main.340/">Contextualizing Generated Citation Texts</a>.
+              <em>LREC-COLING 2024</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://aclanthology.org/2024.lrec-main.340/" target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <!-- Missing 2021 Publications -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span>Kinjal Basu</span>, <span>Huaduo Wang</span>, <span>Nancy Dominguez</span>, <span
+                  class="author-highlighted">Xiangci Li</span>, <span>Fang Li</span>, <span>Sarat Chandra
+                  Varanasi</span>, <span>Gopal Gupta</span>
+              </span>
+              (2021).
+              <a href="https://d7qzviu3xw2xc.cloudfront.net/alexa/alexaprize/docs/sgc4/UT-Dallas-CASPR.pdf">CASPR: A
+                Commonsense Reasoning-based Conversational Socialbot</a>.
+              <em>Alexa Prize Socialbot Grand Challenge 4 Proceedings</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://d7qzviu3xw2xc.cloudfront.net/alexa/alexaprize/docs/sgc4/UT-Dallas-CASPR.pdf"
+                  target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Gully Burns</span>, <span>Nanyun Peng</span>
+              </span>
+              (2021).
+              <a href="http://ceur-ws.org/Vol-2831/paper8.pdf">A Paragraph-level Multi-task Learning Model for
+                Scientific Fact-Verification</a>.
+              <em>The AAAI-21 Workshop on Scientific Document Understanding</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://ceur-ws.org/Vol-2831/paper8.pdf"
+                  target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/YrpYAdNl05Y"
+                  target="_blank" rel="noopener">Video</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm"
+                  href="https://github.com/jacklxc/ParagraphJointModel" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+
+            <!-- 2019 Journal -->
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span>Gully Burns</span>, <span class="author-highlighted">Xiangci Li</span>, <span>Nanyun Peng</span>
+              </span>
+              (2019).
+              <a href="https://doi.org/10.1093/database/baz034">Building deep learning models for evidence
+                classification from the open access biomedical literature</a>.
+              <em>Database</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1093/database/baz034"
+                  target="_blank" rel="noopener">PDF</a>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/jacklxc/expX"
+                  target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+
+            <!-- Preprints & Manuscripts -->
+            <h3 style="margin-top: 3rem; margin-bottom: 1.5rem; color: #2c3e50; font-family: 'Montserrat', sans-serif;">
+              Preprints & Manuscripts</h3>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span>Yi-Hui Lee</span>, <span class="author-highlighted">Xiangci Li</span>, <span>Jessica Ouyang</span>
+              </span>
+              (2025).
+              <a href="https://arxiv.org/abs/2501.11273">Multi-round, Chain-of-thought Post-editing for Unfaithful
+                Summaries</a>.
+              <em>arXiv:2501.11273</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2501.11273"
+                  target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Jessica Ouyang</span>
+              </span>
+              (2024).
+              <a href="https://arxiv.org/abs/2410.13258">How Does Knowledge Selection Help Retrieval Augmented
+                Generation?</a>
+              <em>arXiv:2410.13258</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2410.13258"
+                  target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span>Biswadip Mandal</span>, <span class="author-highlighted">Xiangci Li</span>, <span>Jessica
+                  Ouyang</span>
+              </span>
+              (2024).
+              <a href="https://arxiv.org/abs/2407.14997">Improving Citation Text Generation: Overcoming Limitations in
+                Length Control</a>.
+              <em>arXiv:2407.14997</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2407.14997"
+                  target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li</span>, <span>Jessica Ouyang</span>
+              </span>
+              (2022).
+              <a href="https://arxiv.org/pdf/2201.01880.pdf">Automatic Related Work Generation: A Meta Study</a>.
+              <em>arXiv:2201.01880</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/pdf/2201.01880.pdf"
+                  target="_blank" rel="noopener">PDF</a>
+              </p>
+            </div>
+
+            <div class="pub-list-item view-citation">
+              <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+              <span class="article-metadata li-cite-author">
+                <span class="author-highlighted">Xiangci Li*</span>, <span>Chunyu Duan*</span>, <span>Ce Ma</span>,
+                <span>Zheng Zhang</span>, <span>Carlos Brody</span>, <span>Jeffrey Erlich</span>
+              </span>
+              (2021).
+              <a href="https://youtu.be/Xs9DYRXQxNg">Neurophysiological and computation evidence for the task-set
+                inertia theory of switch cost</a>.
+              <em>Manuscript & Talk at Cosyne 2021 (4.6% acceptance rate)</em>.
+              <p>
+                <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/Xs9DYRXQxNg"
+                  target="_blank" rel="noopener">Video</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="home-section" style="padding-top: 110px;">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Experience</h1>
+          </div>
+
+          <div class="col-12 col-lg-8">
+
+            <ul class="timeline">
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/aws.png" alt="AWS Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Applied Scientist II</h4>
+                    <h5 class="company-name">Amazon Web Services, Inc.</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> May 2024 - Present</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Evaluate and benchmark the performance of Amazon Q Developer Chat.</li>
+                      <li>Dataset creation and benchmarking for automatic code review generation.</li>
+                      <li>Dataset creation and benchmarking for automatic code CPU/memory performance optimization.</li>
+                      <li>Mentoring intern, Manan Suri, on query rewriting for software engineering.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/utdallas.png" alt="UT Dallas Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Graduate Research Assistant</h4>
+                    <h5 class="company-name">University of Texas at Dallas</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Aug 2020 - Nov 2024</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Ph.D. in Computer Science under Prof. Jessica Ouyang</li>
+                      <li>Research focus: Knowledge-intensive Natural Language Generation</li>
+                      <li>Leading expert in automatic related work generation</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/google.png" alt="Google Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Research Intern & Student Researcher</h4>
+                    <h5 class="company-name">Google LLC</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Jan 2024 - May 2024</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Biomedical evidence grounding</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/google.png" alt="Google Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Research Intern</h4>
+                    <h5 class="company-name">Google LLC</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Sep 2023 - Jan 2024</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Project: Minimal Evidence Group Identification</li>
+                      <li>Hosts: Dr. Fan Zhang, Rajvi Kapadia; Collaborator: Sihao Chen</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/amazon.png" alt="Amazon Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Applied Scientist Intern</h4>
+                    <h5 class="company-name">Amazon.com Services LLC</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> May 2023 - Aug 2023</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Project: Large Language Model-Powered Conversational Product Search</li>
+                      <li>Mentors: Dr. Zhiyu Chen, Dr. Besnik Fetahu, Dr. Nikhita Vedula, Jason Choi, Dr. Shervin Malmasi</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/tencent_ai.jpeg" alt="Tencent Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Research Intern</h4>
+                    <h5 class="company-name">Tencent America, LLC</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> May 2022 - Aug 2022</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Project: Multi-source knowledge-based open-domain dialogue generation</li>
+                      <li>Paper accepted by LREC-COLING 2024</li>
+                      <li>Supervisor: Dr. Linfeng Song, Dr. Lifeng Jin & Dr. Haitao Mi</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/utdallas.png" alt="UT Dallas Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Graduate Research Assistant</h4>
+                    <h5 class="company-name">University of Texas at Dallas</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Dec 2020 - May 2021</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Project: Alexa Prize Socialbot Grand Challenge 4</li>
+                      <li>Supervisor: Prof. Gopal Gupta</li>
+                      <li>Built natural language understanding and conversation modules for Alexa chatbot.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/utdallas.png" alt="UT Dallas Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Graduate Teaching Assistant</h4>
+                    <h5 class="company-name">University of Texas at Dallas</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Aug 2020 - Dec 2020</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Undergraduate-level Machine Learning</li>
+                      <li>Graduate-level Semantic Web</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/usc.jpeg" alt="USC Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Student Worker & Research Assistant</h4>
+                    <h5 class="company-name">University of Southern California, Information Sciences Institute</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> May 2018 - Aug 2020</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Advisors: Prof. Nanyun Peng & Dr. Gully Burns</li>
+                      <li>Worked on a series of projects on biomedical information extraction that led to publications:
+                        <ul>
+                          <li>Biomedical experimental type classification</li>
+                          <li>Scientific discourse tagging</li>
+                          <li>Evidence fragment delineation</li>
+                          <li>Automatic scientific claim-verification</li>
+                        </ul>
+                      </li>
+                      <li>Worked on collecting a challenging commonsense reasoning dataset for natural language processing models.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/baidu.jpeg" alt="Baidu Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Research Scientist Intern</h4>
+                    <h5 class="company-name">Baidu USA</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Jan 2020 - May 2020</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Project: Context-aware Stand-alone Neural Spelling Correction</li>
+                      <li>Supervisor: Dr. Hairong Liu & Prof. Liang Huang</li>
+                      <li>Paper accepted by Findings of EMNLP 2020</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/chanzuckerburg.jpeg" alt="Chan Zuckerberg Initiative Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Visiting Researcher</h4>
+                    <h5 class="company-name">Chan Zuckerberg Initiative, Meta</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> May 2019 - Aug 2019</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Supervisor: Dr. Gully Burns</li>
+                      <li>Developed testing pipeline for a content-based recommendation system using clustering techniques.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/nyu_shanghai.png" alt="NYU Shanghai Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Research Assistant</h4>
+                    <h5 class="company-name">NYU-ECNU Institute of Brain and Cognitive Science at NYU Shanghai, Erlich Lab</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> May 2016 - Apr 2018</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>Supervisor: Prof. Jeffrey Erlich & Prof. Zheng Zhang</li>
+                      <li>Project: Virtual Rat</li>
+                      <li>Built a recurrent neural network to model animal’s task switch cost phenomenon and analyzed the the model dynamics.</li>
+                      <li>Analyzed rat’s behavior data and found evidence to support the computational model.</li>
+                      <li>Trained mice and rats with behavior task on a regular basis.</li>
+                      <li>Contributed code for managing lab database using Python and MySQL.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+              <li class="timeline-item">
+                <div class="timeline-image">
+                  <img src="assets/img/nyu_shanghai.png" alt="NYU Shanghai Logo">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>Programmer</h4>
+                    <h5 class="company-name">NYU Shanghai, iGEM team</h5>
+                    <p class="text-muted"><i class="fa fa-calendar-alt"></i> Dec 2014 - Sep 2015</p>
+                  </div>
+                  <div class="timeline-body">
+                    <ul>
+                      <li>iGEM: International Genetically Engineered Machine</li>
+                      <li>Supervisors: Prof. Wenshu Li & Prof. Jungseog Kang</li>
+                      <li>Project: SYNTHESIZED (Bacteria Music Generator)</li>
+                      <li>Played a key role in the team including designing developing the main product and team outreaches.</li>
+                      <li>Attended the iGEM Giant Jamboree in Boston, MA, and won a silver medal.</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="home-section" style="padding-top: 110px;">
+      <div class="container">
+        <div class="row">
+          <div
+            class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Contact</h1>
+          </div>
+
+          <div class="col-12 col-lg-8">
+            <div class="article-style">
+              <p>I'm always interested in discussing research collaborations, potential opportunities, or
+                just connecting with fellow researchers in NLP and AI. Feel free to reach out!</p>
+
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Get in Touch</h4>
+                  <ul class="fa-ul">
+                    <li><i class="fa-li fas fa-envelope"></i><a
+                        href="mailto:lixiangci8@gmail.com">lixiangci8@gmail.com</a></li>
+                    <li><i class="fa-li fas fa-globe"></i><a href="https://jacklxc.github.io/XiangciLi/"
+                        target="_blank">https://jacklxc.github.io/XiangciLi/</a></li>
                   </ul>
-                </li>
-                <li>  Worked on collecting a challenging commonsense reasoning dataset for natural language processing
-                  models</li>
-              </ul>
-            </div>
+                </div>
 
-            <div class="resume-item">
-              <h4>Visiting Researcher</h4>
-              <h5>2019.5 - 2019.8</h5>
-              <p><em>Chan Zuckerburg Initiative</em></p>
-              <ul>
-                <li> Supervised by Dr. Gully Burns</li>
-                <li> Worked under Meta team, which develops a system to recommend biomedical papers to researchers</li>
-                <li> Developed testing pipeline for a content-based recommendation system using clustering techniques</li>
-              </ul>
+                <div class="col-md-6">
+                  <h4>Follow Me</h4>
+                  <ul class="fa-ul">
+                    <li><i class="fa-li fab fa-twitter"></i><a href="https://twitter.com/jacklxc"
+                        target="_blank">@jacklxc</a></li>
+                    <li><i class="fa-li fab fa-github"></i><a href="https://github.com/jacklxc"
+                        target="_blank">jacklxc</a></li>
+                    <li><i class="fa-li fab fa-linkedin"></i><a href="https://www.linkedin.com/in/lixiangci/"
+                        target="_blank">LinkedIn</a></li>
+                    <li><i class="fa-li fab fa-youtube"></i><a href="https://www.youtube.com/@xiangcili6225"
+                        target="_blank">YouTube</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-
-            <div class="resume-item">
-              <h4>Research Assistant</h4>
-              <h5>2016.5 - 2018.4</h5>
-              <p><em>Erlich lab, NYU-ECNU Institute of Brain and Cognitive Science at NYU Shanghai</em></p>
-              <ul>
-                <li> Co-mentored by Professor Jeffrey Erlich and Professor Zheng Zhang</li>
-                <li> Started with student research assistant and switched to full-time research staff after graduation</li>
-                <li> Worked on <i>Virtual Rat</i> project, by building a recurrent neural network to model animal’s task switch cost phenomenon and analyzing the dynamics of the model</li>
-                <li> Analyzed rat’s behavior data and found evidence to support the computational model</li>
-                <li> Submitting a first-author paper for project: <i>Neurophysiological and computation evidence for the task-set inertia theory of switch cost</i>></li>
-                <li> Trained mice and rats with behavior task on a regular basis</li>
-                <li> Contributed code for managing lab database using Python and MySQL</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4>iGEM competition</h4>
-              <h5>2014.12 - 2015.9</h5>
-              <p><em>NYU Shanghai iGEM team </em></p>
-              <ul>
-                <li> International Genetically Engineered Machine (iGEM) is a synthetic biology competition held by MIT.</li>
-                <li> Developed project <i>SYNTHESIZED (Bacteria Music Generator)</i></li>
-                <li> Played a key role in the team including designing developing the main product and team outreaches</li>
-                <li> 	Attended the iGEM Giant Jamboree in Boston, MA, and won a silver medal</li>
-              </ul>
-            </div>
-
           </div>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="skills" class="services">
-      <div class="container" data-aos="fade-up">
+  </div>
 
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p></p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Computer Science Theories</a></h4>
-              <p>Machine Learning, Deep Learning, Natural language Processing, Large Language Models, Knowledge Graph, Computer Vision, Theory of Computation</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">NLP, ML & CV Frameworks</a></h4>
-              <p>OpenAI, Tensorflow, Keras, PyTorch, PaddlePaddle, Scikit-learn, Minpy, NLTK & OpenCV</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Programming</a></h4>
-              <p>Python, Java, C, MATLAB, MySQL, C++, Web (HTML, CSS, JavaScript, Angular 2+, php, Node.js), iOS (Swift), Verilog</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Neuroscience</a></h4>
-              <ul>
-                <li>Electro-physiology data analysis</li>
-                <li>Rodent behavior training</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Languages</a></h4>
-              <ul>
-                <li>Mandarin Chinese (native)</li>
-                <li>Japanese (native, Japanese-Language Proficiency Test N1 certificate)</li>
-                <li>English (full-English-education since college)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4><a href="">Misc.</a></h4>
-              <ul>
-                <li>Piano</li>
-                <li>Swimming</li>
-                <li>Stock trading</li>
-                <li>Driving</li>
-                <li>International politics</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="container">
-      <h3>Xiangci Li</h3>
-      <p></p>
-      <div class="social-links">
-        <a href="https://twitter.com/jacklxc" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.linkedin.com/in/lixiangci/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/jacklxc" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.youtube.com/channel/UCNf4Z-cl68yDckCQbSlieSw/featured" class="youtube"><i class="bx bxl-youtube"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+      <p class="powered-by">
+        © 2025 Xiangci Li. Built with <a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy</a> — the
+        free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a>
+        website builder that empowers creators.
+      </p>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
-  <div id="preloader"></div>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/wowchemy.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  </script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="./Mu Yang's Website_files/wowchemy-init.min.ec9d49ca50e4b80bdb08f0417a28ed84.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+
+  <script>
+    // Smooth scrolling for navigation links
+    $(document).ready(function () {
+      // Smooth scroll function
+      $('a[href^="#"]').on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 70
+          }, 800, function() {
+            window.location.hash = hash;
+          });
+          
+          // Close mobile menu after clicking a link
+          if ($('.navbar-collapse').hasClass('show')) {
+            $('.navbar-collapse').collapse('hide');
+          }
+        }
+      });
+      
+      // Add active class to nav items on scroll
+      $(window).scroll(function() {
+        var scrollDistance = $(window).scrollTop() + 100; // Offset for better UX
+        
+        // Assign active class to nav links while scrolling
+        $('section').each(function(i) {
+          if ($(this).position().top <= scrollDistance) {
+            $('.navbar-nav a.active').removeClass('active');
+            $('.navbar-nav a').eq(i).addClass('active');
+          }
+        });
+      }).scroll();
+      
+      // Theme switching functionality
+      $('.js-set-theme-light').click(function(e) {
+        e.preventDefault();
+        document.documentElement.setAttribute('data-theme', 'light');
+        localStorage.setItem('theme', 'light');
+      });
+      
+      $('.js-set-theme-dark').click(function(e) {
+        e.preventDefault();
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+      });
+      
+      $('.js-set-theme-auto').click(function(e) {
+        e.preventDefault();
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.removeItem('theme');
+      });
+      
+      // Set theme on page load
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      }
+    });
+  </script>
 
 </body>
 
